@@ -26,14 +26,11 @@ public class App {
         // Arrays.stream(bookClass.getFields()).forEach(System.out::println);
 
         // 작성된 모든 필드와 값 가져오기
-/*         Arrays.stream(bookClass.getDeclaredFields()).forEach(f -> {
-            try {
-                f.setAccessible(true);
-                System.out.printf("%s %s\n", f, f.get(book));
-            } catch (IllegalAccessException e) {
-                e.printStackTrace();
-            }
-        }); */
+        /*
+         * Arrays.stream(bookClass.getDeclaredFields()).forEach(f -> { try {
+         * f.setAccessible(true); System.out.printf("%s %s\n", f, f.get(book)); } catch
+         * (IllegalAccessException e) { e.printStackTrace(); } });
+         */
 
         // 메서드 조회하기. 상속받은 메서드도 모두 출력됨
         // Arrays.stream(bookClass.getMethods()).forEach(System.out::println);
@@ -48,11 +45,37 @@ public class App {
         // Arrays.stream(MyBook.class.getInterfaces()).forEach(System.out::println);
 
         // 필드의 정보를 조회하기. 접근 제어자, 함수의 리턴 타입, 어노테이션 등 많은 정보를 알아낼 수 있다.
+        /*
+         * Arrays.stream(Book.class.getDeclaredFields()).forEach(f -> { int modifiers =
+         * f.getModifiers(); System.out.println(f);
+         * System.out.println(Modifier.isPrivate(modifiers));
+         * System.out.println(Modifier.isStatic(modifiers)); });
+         */
+
+        // 어노테이션 조회
+        // Arrays.stream(Book.class.getAnnotations()).forEach(System.out::println);
+
+        // @Inherited를 선언한 어노테이션은 자식들에서도 조회가 가능하다.
+        // MyBook은 자신에게 선언된 AnotherAannotation과 Book에 선언된 MyAnnotation이 모두 조회된다.
+        // Arrays.stream(MyBook.class.getAnnotations()).forEach(System.out::println);
+
+        // 자신에게 선언된 어노테이션만 조회
+        // Arrays.stream(MyBook.class.getDeclaredAnnotations()).forEach(System.out::println);
+
+        // 필드에 붙은 어노테이션들을 출력하기
+        /*
+         * Arrays.stream(Book.class.getDeclaredFields()).forEach(f -> {
+         * Arrays.stream(f.getAnnotations()).forEach(System.out::println); });
+         */
+
         Arrays.stream(Book.class.getDeclaredFields()).forEach(f -> {
-            int modifiers = f.getModifiers();
-            System.out.println(f);
-            System.out.println(Modifier.isPrivate(modifiers));
-            System.out.println(Modifier.isStatic(modifiers));
+            Arrays.stream(f.getAnnotations()).forEach(a -> {
+                if (a instanceof MyAnnotation) {
+                    MyAnnotation myAnnotation = (MyAnnotation) a;
+                    System.out.println(myAnnotation.value());
+                    System.out.println(myAnnotation.number());
+                }
+            });
         });
     }
 }
