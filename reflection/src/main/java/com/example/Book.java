@@ -1,40 +1,24 @@
 package com.example;
 
-@MyAnnotation("custom")
 public class Book {
 
-    @MyAnnotation
-    private static String B = "BOOK";
+    public static String A = "A";
 
-    private static final String C = "BOOK";
+    private String B = "B";
 
-    @AnotherAnnotation
-    private String a = "a";
-
-    public String d = "d";
-
-    protected String e = "e";
-
-    // @MyAnnotation - Target에 포함되지 않아 컴파일 에러 발생
     public Book() {
     }
 
-    @AnotherAnnotation
-    public Book(String a, String d, String e) {
-        this.a = a;
-        this.d = d;
-        this.e = e;
+    public Book(String b) {
+        B = b;
     }
 
-    private void f() {
-        System.out.println("F");
+    private void c() {
+        System.out.println("C");
     }
 
-    public void g() {
-        System.out.println("g");
+    public int sum(int left, int right) {
+        return left + right;
     }
 
-    public int h() {
-        return 100;
-    }
 }
