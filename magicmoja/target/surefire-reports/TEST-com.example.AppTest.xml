@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.example.AppTest" time="0.002" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="16.0.2+7"/>
+    <property name="sun.boot.library.path" value="D:\openJDK 16\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:/the-java-code-magic/magicmoja"/>
+    <property name="java.vm.vendor" value="Eclipse Foundation"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="KR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\the-java-code-magic\magicmoja"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="16.0.2+7"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\jo290\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="E:/devtools/apache-maven-3.8.1/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="MS949"/>
+    <property name="java.library.path" value="D:\openJDK 16\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\jo290\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\jo290\bin;D:\oracledb\app\oracle\product\11.2.0\server\bin;C:\Python39\Scripts;C:\Python39;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;D:\openJDK 11\bin;D:\putty;D:\Postgresql\bin;C:\ProgramData\MySQL\MySQL Server 8.0;C:\Program Files\MongoDB\Server\4.4\bin;D:\anaconda3\condabin;C:\WINDOWS\System32\OpenSSH;E:\devtools\gradle-7.2\bin;E:\devtools\apache-maven-3.8.1\bin;D:\nodejs;C:\Users\jo290\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Program Files\Bandizip;C:\Users\jo290\AppData\Local\GitHubDesktop\bin;D:\WebStorm 2021.1.2\bin;D:\anaconda3\condabin;D:\openJDK 16\bin;E:\devtools\gradle-7.1.1\bin;E:\devtools\apache-maven-3.8.1\bin;C:\Users\jo290\AppData\Roaming\npm;C:\tools\neovim\Neovim\bin;D:\heroku\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="maven.conf" value="E:/devtools/apache-maven-3.8.1/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="60.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="E:/devtools/apache-maven-3.8.1/lib/jansi-native"/>
+    <property name="user.home" value="C:\Users\jo290"/>
+    <property name="user.timezone" value="Asia/Seoul"/>
+    <property name="file.encoding" value="MS949"/>
+    <property name="java.specification.version" value="16"/>
+    <property name="user.name" value="jo290"/>
+    <property name="java.class.path" value="E:/devtools/apache-maven-3.8.1/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.home" value="D:\openJDK 16"/>
+    <property name="user.language" value="ko"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="16.0.2"/>
+    <property name="java.vendor" value="Eclipse Foundation"/>
+    <property name="sun.stderr.encoding" value="ms949"/>
+    <property name="maven.home" value="E:\devtools\apache-maven-3.8.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-16.0.2+7"/>
+    <property name="sun.stdout.encoding" value="ms949"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.example.AppTest" name="shouldAnswerWithTrue" time="0.002"/>
+</testsuite>
